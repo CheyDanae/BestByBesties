@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDB9B9"
+    tools:context=".ItemInfo">
+
+    <TextView
+        android:id="@+id/ItemClicked"
+        android:layout_width="223dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="600dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="@+id/receiveCaption"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/receiveCaption"
+        android:layout_width="193dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:text="Receive Date:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/receiveInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ItemClicked" />
+
+    <TextView
+        android:id="@+id/receiveInfo"
+        android:layout_width="106dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/ExpirationCaption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receiveCaption" />
+
+    <TextView
+        android:id="@+id/ExpirationCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="25dp"
+        android:text="Expiration Date:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/expirationInfo"
+        app:layout_constraintEnd_toEndOf="@+id/receiveInfo"
+        app:layout_constraintTop_toBottomOf="@+id/receiveInfo" />
+
+    <TextView
+        android:id="@+id/expirationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="23dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/quantityCaption"
+        app:layout_constraintStart_toStartOf="@+id/ExpirationCaption"
+        app:layout_constraintTop_toBottomOf="@+id/ExpirationCaption" />
+
+    <TextView
+        android:id="@+id/quantityCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="95dp"
+        android:text="Quantity: "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/typeCaption"
+        app:layout_constraintEnd_toStartOf="@+id/expirationInfo"
+        app:layout_constraintStart_toStartOf="@+id/expirationInfo"
+        app:layout_constraintTop_toBottomOf="@+id/expirationInfo" />
+
+    <TextView
+        android:id="@+id/quantityInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/quantityCaption"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/typeCaption"
+        android:layout_width="104dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="15dp"
+        android:text="Type: "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/typeInfo"
+        app:layout_constraintEnd_toEndOf="@+id/ExpirationCaption"
+        app:layout_constraintStart_toStartOf="@+id/ItemClicked"
+        app:layout_constraintTop_toBottomOf="@+id/quantityCaption" />
+
+    <TextView
+        android:id="@+id/typeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="17dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/storageCaption"
+        app:layout_constraintEnd_toEndOf="@+id/typeCaption"
+        app:layout_constraintTop_toBottomOf="@+id/typeCaption" />
+
+    <TextView
+        android:id="@+id/storageCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Storage: "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/storageInfo"
+        app:layout_constraintEnd_toStartOf="@+id/typeInfo"
+        app:layout_constraintStart_toStartOf="@+id/typeInfo"
+        app:layout_constraintTop_toBottomOf="@+id/typeInfo" />
+
+    <TextView
+        android:id="@+id/storageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="144dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/storageCaption"
+        app:layout_constraintTop_toBottomOf="@+id/storageCaption" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="33dp"
+        android:text="<- Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ItemClicked" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
